@@ -2,7 +2,7 @@
 from datetime import datetime
 # from comment import Comment
 
-class BadRequestError(Excecption):
+class BadRequestError(Exception):
     pass
 
 class User(object):
@@ -58,7 +58,7 @@ class User(object):
         return self.username
 
     def delete_comment(self, comment):
-        
+
         raise BadRequestError
 
 
