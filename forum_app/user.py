@@ -31,4 +31,11 @@ class User(object):
             return True
         return False
 
+    def edit_comment(self, comment, message):
+        
+        if comment.get_author.get_username == self.username:
+            comment.set_message(message)
+            return True
+        return False
+
 
