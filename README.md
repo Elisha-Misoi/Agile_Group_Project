@@ -1,5 +1,8 @@
 ### Agile Group Project
 
+### Running app
+- Use `python run.py`
+
 ### Running Tests
 - Install pytest
 - Navigate to project root
