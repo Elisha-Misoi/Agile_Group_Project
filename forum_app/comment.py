@@ -39,4 +39,3 @@ class Comment(object):
     def get_create_at(self):
         '''method to return creation time'''
         return self.created_at
-

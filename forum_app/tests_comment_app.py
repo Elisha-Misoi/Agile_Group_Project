@@ -32,3 +32,4 @@ class UserTestCase(unittest.TestCase):
 
   def test_moderator_can_delete_comment(self):
     self.assertTrue(self.mod1.delete_comment(self.comment))
+    
