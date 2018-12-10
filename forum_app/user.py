@@ -2,6 +2,9 @@
 from datetime import datetime
 # from comment import Comment
 
+class BadRequestError(Excecption):
+    pass
+
 class User(object):
 
     def __init_(self, username, password):
@@ -46,5 +49,18 @@ class User(object):
         Returns a comment object
         """
         return comment(self, message)
+
+    def get_last_logged_in(self):
+        return self.loggedInAt
+
+    @property
+    def get_username(self):
+        return self.username
+
+    def delete_comment(self, comment):
+        
+        raise BadRequestError
+
+
 
 
