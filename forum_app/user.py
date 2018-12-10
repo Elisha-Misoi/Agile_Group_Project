@@ -1,13 +1,12 @@
-
 from datetime import datetime
-# from comment import Comment
+from comment import Comment
 
 class BadRequestError(Exception):
     pass
 
-class User(object):
+class User:
 
-    def __init_(self, username, password):
+    def __init__(self, username, password):
         self.username = username
         self.password = password
         self.loggedInAt = None
@@ -41,7 +40,7 @@ class User(object):
             return True
         return False
 
-     def create_comment(self, comment, message):
+    def create_comment(self, comment, message):
         """
         creates a new comment.
         comment - Comment Object
@@ -60,7 +59,3 @@ class User(object):
     def delete_comment(self, comment):
 
         raise BadRequestError
-
-
-
-
