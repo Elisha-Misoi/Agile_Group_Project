@@ -38,4 +38,13 @@ class User(object):
             return True
         return False
 
+     def create_comment(self, comment, message):
+        """
+        creates a new comment.
+        comment - Comment Object
+        message = string
+        Returns a comment object
+        """
+        return comment(self, message)
+
 
