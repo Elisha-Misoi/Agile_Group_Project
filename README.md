@@ -1,7 +1,7 @@
 ### Agile Group Project
 
 ### Running app
-- Use `python run.py`
+- Use `python forum_app/run.py`
 
 ### Running Tests
 - Install pytest
